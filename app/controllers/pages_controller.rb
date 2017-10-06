@@ -3,6 +3,7 @@ class PagesController < ApplicationController
   end
 
   def rooms
+    @rooms = Room.all
   end
 
   def contact

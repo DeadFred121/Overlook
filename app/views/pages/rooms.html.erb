@@ -1,6 +1,12 @@
 <h1>List of Rooms avaliable:</h1>
 
-<ul>
+<% @rooms.each do |room| %>
+  <p>Room Type: <strong><%= room.title %></strong></p>
+  <p><%= room.description %></p>
+  <p>PPN: <%= room.price_per_night %></p><br>
+<% end %>
+
+<!-- <ul>
   <li>
     <p>CLASSIC ROOMS</p>
     <p>KING + QUEEN</p>
@@ -22,4 +28,4 @@
     <p>PRESIDENTIAL COTTAGE</p>
     <p>The Presidential Cottage features three bedrooms and two and a half baths on the main and upper level (each with a king size bed), as well as a kitchenette, a dining and living room area, and a private deck off the living room and master bedroom. In addition, two garden-level units  can be opened to the main cottage, each with their own king bed and bathroom. Sold together, the Presidential Cottage features five bedrooms and four-and a half bathrooms. The Presidential Cottage is air-conditioned.</p>
   </li>
-</ul>
+</ul> -->
