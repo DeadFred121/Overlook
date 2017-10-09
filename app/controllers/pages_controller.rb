@@ -6,8 +6,11 @@ class PagesController < ApplicationController
     @rooms = Room.all
   end
 
-  def contact
+  def admin
+    @enquiries = Enquiry.all
+  end
 
+  def contact
   end
 
   def about
