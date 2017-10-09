@@ -7,6 +7,8 @@
   <%= f.text_field :email %><br>
   <%= f.label :phone %>
   <%= f.text_field :phone %><br>
+  <%= f.label :rooms %>
+  <%= f.select :room, ["Classic Room", "Deluxe King Room", "Superior King Room", "Overlook Suite", "Presidential Cottage"] %><br>
   <%= f.label :message %>
   <%= f.text_area :message, :size => "60x12" %><br>
   <%= submit_tag "Create" %>
