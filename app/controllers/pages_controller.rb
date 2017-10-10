@@ -16,6 +16,8 @@ class PagesController < ApplicationController
   def about
   end
 
+  
+
   def enquiry
     @enquiry = Enquiry.new(enquiry_params)
 

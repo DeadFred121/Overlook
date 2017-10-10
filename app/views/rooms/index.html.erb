@@ -1,0 +1,8 @@
+<p>Rooms: </p>
+
+<% @rooms.each do |room| %>
+  <p>Room Type: <strong><%= room.title %></strong></p>
+  <p><%= room.description %></p>
+  <p>PPN: <%= room.price_per_night %> | <%= link_to 'Edit', edit_room_path(room) %> || <%= link_to 'Delete', room, method: :delete %> |</p><br>
+
+<% end %>
